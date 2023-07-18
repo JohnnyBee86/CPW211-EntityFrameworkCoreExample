@@ -10,7 +10,7 @@ namespace EntityFrameworkCoreExample
 	public class Student
 	{
 		[Key] // "annotates" the next element the primary key
-		public int Id { get; set; }
+		public int Id { get; private set; }
 
 		public string FullName { get; set; }
 
