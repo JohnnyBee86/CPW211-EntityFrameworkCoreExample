@@ -25,5 +25,8 @@ namespace EntityFrameworkCoreExample
 				"Database=EFCoreExample;" +
 				"Trusted_Connection=True;");
 		}
+
+		// Tells EF Core to track Students in the db
+		public DbSet<Student> Students { get; set; }
 	}
 }
