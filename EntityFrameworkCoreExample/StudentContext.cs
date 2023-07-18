@@ -18,14 +18,12 @@ namespace EntityFrameworkCoreExample
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			base.OnConfiguring(optionsBuilder);
-
 			// Database = desired name for the database
 			// Server = the server we are connecting to. LocalDB is included with VS
 			// Trusted_Connection = indicates that our windows account should be used
-			optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb" +
-				";Database=EFCoreExample" +
-				";Trusted_Connection=True;");
+			optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;" +
+				"Database=EFCoreExample;" +
+				"Trusted_Connection=True;");
 		}
 	}
 }
